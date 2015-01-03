@@ -1,0 +1,44 @@
+.day0h {
+    color: #fac0ba;
+    color: #ddd;
+    padding-left: 25px;
+}
+
+.navbar {
+    height: 100px;
+    padding-top: 50px;
+    background-image: url("/resources/images/header-background.jpg");
+}
+
+body {padding-top: 150px;}
+
+.pad{
+padding-top: 100px;
+}
+
+
+.dark {
+background-color: rgb(232, 232, 232);
+}
+
+#map-canvas {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#address {
+    display: none
+}
+
+a.logo {
+    font-weight: bold;
+    color: red;
+}
+
+.row{
+    border-bottom: solid black 1px;
+}
