@@ -10,7 +10,9 @@ published: true
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    {% include google_analytics.html %}
+    <!--
+	{% include google_analytics.html %}
+      -->
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
@@ -31,8 +33,33 @@ published: true
 
 <div class="container">
     <div class="hairstrand"></div>
-    <a name="first"></a>
 
+
+    {% for post in site.posts %}
+    <script type="text/JavaScript">
+      $(function() {
+      var dtFrom = new Date("{{post.from}}");
+      var dtTo = new Date("{{post.to}}");
+      var dtNow = new Date();
+      if (dtNow >= dtFrom && dtNow <= dtTo) $(".{{post.code}}").show();
+				      });
+				      </script>
+
+    <div class="row time-boxed {{post.code}}">
+        <div class="col-lg-9 sleva">
+            <div class=" page-header">
+                <h1>{{post.title}}</h1>
+            </div>
+            <div class="bs-component">
+                <p>
+		   <i>{{post.content}}</i>
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+    <a name="first"></a>
     <div class="row">
         <div class="col-lg-9">
             <div class="page-header">

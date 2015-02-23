@@ -60,6 +60,10 @@ background-color: rgb(232, 232, 232);
     z-index: 0;
 }
 
+.time-boxed {
+    display: none; 
+}
+
 #address {
     display: none
 }
@@ -68,6 +72,12 @@ a.logo {
     font-weight: bold;
     color: white;
     font-size: 220%;
+}
+
+.sleva {
+    border-left-color:  rgb(255, 0, 255);
+    border-left-style: solid;
+    border-left-width: 5px;
 }
 
 .row{
