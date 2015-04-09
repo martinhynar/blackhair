@@ -88,3 +88,15 @@ a.logo {
 .foot {
 font-size: 70% !important;
 }
+
+div.highlight-me {
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-bottom-color: white;
+}
+div.highlight-me:hover {
+  border-bottom-style: dotted;
+  border-bottom-width: thin;
+  border-bottom-color: black;
+  cursor: default;
+}
