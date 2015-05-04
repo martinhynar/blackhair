@@ -33,31 +33,31 @@ published: true
     <div class="hairstrand"></div>
 
 
-    {% for post in site.posts %}
-    <script type="text/JavaScript">
-      $(function() {
-      var dtFrom = new Date("{{post.from}}");
-      var dtTo = new Date("{{post.to}}");
-      var dtNow = new Date();
-      if (dtNow >= dtFrom && dtNow <= dtTo) $(".{{post.code}}").show();
-				      });
+    <!--{% for post in site.posts %}-->
+    <!--<script type="text/JavaScript">-->
+      <!--$(function() {-->
+      <!--var dtFrom = new Date("{{post.from}}");-->
+      <!--var dtTo = new Date("{{post.to}}");-->
+      <!--var dtNow = new Date();-->
+      <!--if (dtNow >= dtFrom && dtNow <= dtTo) $(".{{post.code}}").show();-->
+				      <!--});-->
 
 
-    </script>
+    <!--</script>-->
 
-    <div class="row time-boxed {{post.code}}">
-        <div class="col-lg-9 sleva">
-            <div class=" page-header">
-                <h1>{{post.title}}</h1>
-            </div>
-            <div class="bs-component">
-                <p>
-                    <i>{{post.content}}</i>
-                </p>
-            </div>
-        </div>
-    </div>
-    {% endfor %}
+    <!--<div class="row time-boxed {{post.code}}">-->
+        <!--<div class="col-lg-9 sleva">-->
+            <!--<div class=" page-header">-->
+                <!--<h1>{{post.title}}</h1>-->
+            <!--</div>-->
+            <!--<div class="bs-component">-->
+                <!--<p>-->
+                    <!--<i>{{post.content}}</i>-->
+                <!--</p>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--{% endfor %}-->
 
     <a name="first"></a>
 
@@ -66,7 +66,7 @@ published: true
             <div class="page-header">
                 <h1 id="navbar">Vítejte!</h1>
             </div>
-            <div class="bs-component">
+            <div>
                 <p>
                     Kadeřnictví Black Hair poskytuje kompletní kadeřnické služby, pohodlí, komfort a práci s těmi
                     nejkvalitnějšími vlasovými produkty značky Schwarzkopf Professional, která je na trhu více jak 110
@@ -143,111 +143,111 @@ published: true
                 </div>
 
                 <div class="row">
-                    <div class="col-md-2 col-md-offset-5">Krátké</div>
-                    <div class="col-md-2">Dlouhé</div>
+                    <div class="col-xs-2 col-xs-offset-5">Krátké</div>
+                    <div class="col-xs-2">Dlouhé</div>
                 </div>
                 <div class="row highlight-me">
-                    <div class="col-md-1"><b>Dámy</b></div>
-                    <div class="col-md-4">Střih + foukaná (žehlení)</div>
-                    <div class="col-md-2">240</div>
-                    <div class="col-md-2">290</div>
+                    <div class="col-xs-1"><b>Dámy</b></div>
+                    <div class="col-xs-4">Střih + foukaná (žehlení)</div>
+                    <div class="col-xs-2">240</div>
+                    <div class="col-xs-2">290</div>
                 </div>
                 <div class="row highlight-me">
-                    <div class="col-md-4 col-md-offset-1">Střih</div>
-                    <div class="col-md-2">100</div>
-                    <div class="col-md-2">130</div>
+                    <div class="col-xs-4 col-xs-offset-1">Střih</div>
+                    <div class="col-xs-2">100</div>
+                    <div class="col-xs-2">130</div>
                 </div>
                 <div class="row highlight-me">
-                    <div class="col-md-4 col-md-offset-1">Foukaná bez střihu</div>
-                    <div class="col-md-2">150</div>
-                    <div class="col-md-2">200</div>
+                    <div class="col-xs-4 col-xs-offset-1">Foukaná bez střihu</div>
+                    <div class="col-xs-2">150</div>
+                    <div class="col-xs-2">200</div>
                 </div>
                 <div class="row highlight-me">
-                    <div class="col-md-4 col-md-offset-1">Žehlení, kulmování bez střihu</div>
-                    <div class="col-md-2">100</div>
-                    <div class="col-md-2">150</div>
+                    <div class="col-xs-4 col-xs-offset-1">Žehlení, kulmování bez střihu</div>
+                    <div class="col-xs-2">100</div>
+                    <div class="col-xs-2">150</div>
                 </div>
                 <div class="row highlight-me">
-                    <div class="col-md-4 col-md-offset-1">Masáž hlavy s olejem, úprava bez střihu</div>
-                    <div class="col-md-2">200</div>
-                    <div class="col-md-2">300</div>
+                    <div class="col-xs-4 col-xs-offset-1">Masáž hlavy s olejem, úprava bez střihu</div>
+                    <div class="col-xs-2">200</div>
+                    <div class="col-xs-2">300</div>
                 </div>
                 <div class="row highlight-me">
-                    <div class="col-md-4 col-md-offset-1">Masáž hlavy s olejem, úprava se střihem</div>
-                    <div class="col-md-2">300</div>
-                    <div class="col-md-2">420</div>
+                    <div class="col-xs-4 col-xs-offset-1">Masáž hlavy s olejem, úprava se střihem</div>
+                    <div class="col-xs-2">300</div>
+                    <div class="col-xs-2">420</div>
                 </div>
                 <div class="row highlight-me">
-                    <div class="col-md-4 col-md-offset-1">Barvení + střih + foukaná</div>
-                    <div class="col-md-2">480</div>
-                    <div class="col-md-2">560</div>
+                    <div class="col-xs-4 col-xs-offset-1">Barvení + střih + foukaná</div>
+                    <div class="col-xs-2">480</div>
+                    <div class="col-xs-2">560</div>
                 </div>
                 <div class="row highlight-me">
-                    <div class="col-md-4 col-md-offset-1">Melír + střih + foukaná</div>
-                    <div class="col-md-2">490</div>
-                    <div class="col-md-2">580</div>
+                    <div class="col-xs-4 col-xs-offset-1">Melír + střih + foukaná</div>
+                    <div class="col-xs-2">490</div>
+                    <div class="col-xs-2">580</div>
                 </div>
                 <div class="row highlight-me">
-                    <div class="col-md-4 col-md-offset-1">Barvení + melír + střih + foukaná</div>
-                    <div class="col-md-2">550</div>
-                    <div class="col-md-2">690</div>
+                    <div class="col-xs-4 col-xs-offset-1">Barvení + melír + střih + foukaná</div>
+                    <div class="col-xs-2">550</div>
+                    <div class="col-xs-2">690</div>
                 </div>
                 <div class="row highlight-me">
-                    <div class="col-md-4 col-md-offset-1">Barvení celá délka + střih</div>
-                    <div class="col-md-2">530</div>
-                    <div class="col-md-2">690</div>
+                    <div class="col-xs-4 col-xs-offset-1">Barvení celá délka + střih</div>
+                    <div class="col-xs-2">530</div>
+                    <div class="col-xs-2">690</div>
                 </div>
                 <div class="row highlight-me">
-                    <div class="col-md-4 col-md-offset-1">Přeliv vlasů + střih + foukaná</div>
-                    <div class="col-md-2">450</div>
-                    <div class="col-md-2">550</div>
+                    <div class="col-xs-4 col-xs-offset-1">Přeliv vlasů + střih + foukaná</div>
+                    <div class="col-xs-2">450</div>
+                    <div class="col-xs-2">550</div>
                 </div>
                 <div class="row highlight-me">
-                    <div class="col-md-4 col-md-offset-1">Trvalá + střih + foukaná</div>
-                    <div class="col-md-2">400</div>
+                    <div class="col-xs-4 col-xs-offset-1">Trvalá + střih + foukaná</div>
+                    <div class="col-xs-2">400</div>
                 </div>
                 <div class="row highlight-me">
-                    <div class="col-md-4 col-md-offset-1">Společenský účes</div>
-                    <div class="col-md-2">260</div>
-                    <div class="col-md-2">370</div>
+                    <div class="col-xs-4 col-xs-offset-1">Společenský účes</div>
+                    <div class="col-xs-2">260</div>
+                    <div class="col-xs-2">370</div>
                 </div>
                 <div class="row highlight-me">
-                    <div class="col-md-4 col-md-offset-1">Příplatek za dlouhé husté vlasy</div>
-                    <div class="col-md-2">150</div>
+                    <div class="col-xs-4 col-xs-offset-1">Příplatek za dlouhé husté vlasy</div>
+                    <div class="col-xs-2">150</div>
                 </div>
                 <div class="row highlight-me">
-                    <div class="col-md-1"><b>Pánové</b></div>
-                    <div class="col-md-4">Střih + mytí + úprava</div>
-                    <div class="col-md-2">120</div>
-                    <div class="col-md-2">140</div>
+                    <div class="col-xs-1"><b>Pánové</b></div>
+                    <div class="col-xs-4">Střih + mytí + úprava</div>
+                    <div class="col-xs-2">120</div>
+                    <div class="col-xs-2">140</div>
                 </div>
                 <div class="row highlight-me">
-                    <div class="col-md-4 col-md-offset-1">Střih/Střih strojkem</div>
-                    <div class="col-md-2">80</div>
+                    <div class="col-xs-4 col-xs-offset-1">Střih/Střih strojkem</div>
+                    <div class="col-xs-2">80</div>
                 </div>
                 <div class="row highlight-me">
-                    <div class="col-md-4 col-md-offset-1">Ofina, vousy</div>
-                    <div class="col-md-2">40</div>
+                    <div class="col-xs-4 col-xs-offset-1">Ofina, vousy</div>
+                    <div class="col-xs-2">40</div>
                 </div>
                 <div class="row highlight-me">
-                    <div class="col-md-1"><b>Děti</b></div>
-                    <div class="col-md-4">Střih</div>
-                    <div class="col-md-2">80</div>
-                    <div class="col-md-2">100</div>
+                    <div class="col-xs-1"><b>Děti</b></div>
+                    <div class="col-xs-4">Střih</div>
+                    <div class="col-xs-2">80</div>
+                    <div class="col-xs-2">100</div>
                 </div>
                 <div class="row highlight-me">
-                    <div class="col-md-4 col-md-offset-1">Kreativní střih + mytí + úprava</div>
-                    <div class="col-md-2">120</div>
-                    <div class="col-md-2">150</div>
+                    <div class="col-xs-4 col-xs-offset-1">Kreativní střih + mytí + úprava</div>
+                    <div class="col-xs-2">120</div>
+                    <div class="col-xs-2">150</div>
                 </div>
                 <div class="row highlight-me">
-                    <div class="col-md-1"><b>Masáže</b></div>
-                    <div class="col-md-4">Masáž rukou (aroma)</div>
-                    <div class="col-md-2">60</div>
+                    <div class="col-xs-1"><b>Masáže</b></div>
+                    <div class="col-xs-4">Masáž rukou (aroma)</div>
+                    <div class="col-xs-2">60</div>
                 </div>
                 <div class="row highlight-me">
-                    <div class="col-md-4 col-md-offset-1">Masáž hlavy</div>
-                    <div class="col-md-2">40</div>
+                    <div class="col-xs-4 col-xs-offset-1">Masáž hlavy</div>
+                    <div class="col-xs-2">40</div>
                 </div>
             </div>
         </div>
