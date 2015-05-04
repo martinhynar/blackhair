@@ -30,34 +30,34 @@ published: true
 {% include header.html %}
 
 <div class="container">
-    <div class="hairstrand"></div>
+    <!--<div class="hairstrand"></div>-->
 
 
-    <!--{% for post in site.posts %}-->
-    <!--<script type="text/JavaScript">-->
-      <!--$(function() {-->
-      <!--var dtFrom = new Date("{{post.from}}");-->
-      <!--var dtTo = new Date("{{post.to}}");-->
-      <!--var dtNow = new Date();-->
-      <!--if (dtNow >= dtFrom && dtNow <= dtTo) $(".{{post.code}}").show();-->
-				      <!--});-->
+    {% for post in site.posts %}
+    <script type="text/JavaScript">
+      $(function() {
+      var dtFrom = new Date("{{post.from}}");
+      var dtTo = new Date("{{post.to}}");
+      var dtNow = new Date();
+      if (dtNow >= dtFrom && dtNow <= dtTo) $(".{{post.code}}").show();
+				      });
 
 
-    <!--</script>-->
+    </script>
 
-    <!--<div class="row time-boxed {{post.code}}">-->
-        <!--<div class="col-lg-9 sleva">-->
-            <!--<div class=" page-header">-->
-                <!--<h1>{{post.title}}</h1>-->
-            <!--</div>-->
-            <!--<div class="bs-component">-->
-                <!--<p>-->
-                    <!--<i>{{post.content}}</i>-->
-                <!--</p>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!--{% endfor %}-->
+    <div class="row time-boxed {{post.code}}">
+        <div class="col-lg-9 sleva">
+            <div class=" page-header">
+                <h1>{{post.title}}</h1>
+            </div>
+            <div class="bs-component">
+                <p>
+                    <i>{{post.content}}</i>
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
 
     <a name="first"></a>
 
