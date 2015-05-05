@@ -21,19 +21,22 @@ height:auto;
     padding-top: 40px;
     background: black;
     border: black;
-    background-image: url("/resources/images/header-backgroundbw.jpg");
+//    background-image: url("/resources/images/header-backgroundbw.jpg");
 }
 
 .navbar .navbar-nav li a {
    color: white;
 }
 
-.navbar a {
-font-size: 130%;
+.navbar-nav>li>a {
+    font-size: 130%;
+}
+a.navbar-brand {
+    font-size: 19px;
 }
 
 .row p {
-font-size: 130%;
+    font-size: 130%;
 }
 
 body {
