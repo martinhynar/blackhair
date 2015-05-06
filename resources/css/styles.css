@@ -24,6 +24,14 @@
     padding-right: 50px;
 }
 
+.navbar-brand {
+    padding-left: 100px;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: rgb(255, 0, 255);
+}
+
 .container {
     padding-top: 10px;
 }
@@ -47,7 +55,7 @@
 
 .navbar-default .navbar-brand {
     font-size: 200%;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     color: rgb(255, 0, 255);
 }
@@ -67,6 +75,7 @@
 body {
     padding-top: 100px;
     background: white;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .pad{
