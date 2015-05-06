@@ -1,27 +1,40 @@
 .hairstrand {
- background-image: url("/resources/images/hair-strandbw.jpg");
- background-repeat: no-repeat;
-  height: 400px;
-  width: 400px;
-  position: fixed;
-  z-index:0;
-  top: 100px;
-  left: 70%;
+    background-image: url("/resources/images/hair-strandbw.jpg");
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 400px;
+    position: fixed;
+    z-index:0;
+    top: 100px;
+    left: 70%;
 }
 
 .scissors {
-height:auto;
- width:auto;
-  max-width:50px;
-   max-height:50px;
+    height:auto;
+    width:auto;
+    max-width:50px;
+    max-height:50px;
 }
 
+.navbar-fixed-top {
+    min-height: 100px;
+}
+
+.navbar-header {
+    padding-right: 50px;
+}
+
+.container {
+    padding-top: 10px;
+}
 
 .navbar {
     padding-top: 40px;
     background: black;
     border: black;
 //    background-image: url("/resources/images/header-backgroundbw.jpg");
+//    background-height: 100px;
+//    background-repeat: repeat-x;
 }
 
 .navbar .navbar-nav li a {
@@ -31,8 +44,20 @@ height:auto;
 .navbar-nav>li>a {
     font-size: 130%;
 }
-a.navbar-brand {
-    font-size: 19px;
+
+.navbar-default .navbar-brand {
+    font-size: 200%;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(255, 0, 255);
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #CF1BCC;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #CF1BCC;
 }
 
 .row p {
@@ -40,12 +65,12 @@ a.navbar-brand {
 }
 
 body {
-padding-top: 100px;
- background: white;
+    padding-top: 100px;
+    background: white;
 }
 
 .pad{
-padding-top: 80px;
+    padding-top: 80px;
 }
 
 
@@ -74,6 +99,12 @@ a.logo {
     font-weight: bold;
     color: white;
     font-size: 220%;
+}
+
+.lead-character {
+    font-size: 130%;
+    font-weight: inherit;
+    line-height: inherit;
 }
 
 .sleva {
