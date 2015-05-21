@@ -11,4 +11,4 @@ Zažeňte jarní únavu s pomocí masáže hlavy s olejem, zavřete oči a zapom
 
 &nbsp;
 
-[Chci se dozvědět více ...](detail/olejova-masaz.html)
+<a href="detail/olejova-masaz.html" onclick="ga('send', 'event', 'link', 'click', 'akce-olejova-masaz');">Chci se dozvědět více ...</a>
