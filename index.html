@@ -230,8 +230,9 @@ published: true
 </div>
 
 <!-- Add Google Maps -->
-<script src="https://maps.googleapis.com/maps/api/js"></script>
-<script>
+<script defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfE2H_Xj_KQEfIjY2dHpmCmPA4qf6Unuc&callback=initialize">
+</script>
 var myCenter = new google.maps.LatLng(49.365975, 16.644523);
 
 function initialize() {
