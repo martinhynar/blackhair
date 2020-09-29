@@ -233,27 +233,16 @@ published: true
 <script defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfE2H_Xj_KQEfIjY2dHpmCmPA4qf6Unuc&callback=initialize">
 </script>
-var myCenter = new google.maps.LatLng(49.365975, 16.644523);
-
+<script>
 function initialize() {
-var mapProp = {
-center:myCenter,
-zoom:18,
-scrollwheel:false,
-draggable:false,
-mapTypeId:google.maps.MapTypeId.ROADMAP
-};
+    map = new google.maps.Map(document.getElementById('googleMap'), {
+        center: {lat: 49.365975, lng: 16.644523},
+        zoom: 8,
+        scrollwheel:false,
+        draggable:false,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+    });
 
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-var marker = new google.maps.Marker({
-position:myCenter,
-});
-
-marker.setMap(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
 </script>
 
 <!-- Footer -->
