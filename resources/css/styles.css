@@ -97,3 +97,7 @@ body {
   textarea {
       resize: none;
   }
+
+.darkrow {
+      background-color: #F9F9F9;
+}
